@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     }
     var num1 = 0;
     var num2 = 0;
+    var varOperator ="";
     fun onOperator(view:View){
 //        Toast.makeText(this,"yes $num1", Toast.LENGTH_SHORT).show()
         //tvResult.text gives text and not String
@@ -31,17 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         val temp = tvResult.text.toString().filter { it.isDigit() }
         num1 = temp.toInt()
+        varOperator = (view as Button).text.toString()
         tvEquation.append((view as Button).text)
         tvResult.text = ""
     }
-    fun onEqual(view:View){
-        Toast.makeText(this,"Equal clicked", Toast.LENGTH_SHORT).show()
-        tvEquation.append("=")
-        num2 = tvResult.text.toString().filter { it.isDigit() }.toInt() //see num1 if confused
-        val temp = num1+num2
-        tvResult.text = temp.toString()
-        tvEquation.append("${temp.toString()}\n")
-    }
+
     fun onClear(view: View){
         tvResult.text = ""
         lastNumeric=false; lastDecimal=false
@@ -52,15 +47,36 @@ class MainActivity : AppCompatActivity() {
         lastNumeric=false; lastDecimal=false
     }
     fun onDecimal(view: View){
-        if(lastNumeric == true && lastDecimal == false){
+        if(lastNumeric && !lastDecimal){
             tvResult.append(".")
             tvEquation.append(".")
             lastDecimal=true
         }
-        else if(lastNumeric==false){
+        else if(!lastNumeric){
             Toast.makeText(this, "Dude, you cannot have decimal without a number", Toast.LENGTH_SHORT).show()
         }
         else
             Toast.makeText(this, "Dude, when have you put two decimals in one number??", Toast.LENGTH_SHORT).show()
+    }
+    fun onEqual(view:View){
+//        Toast.makeText(this,"Equal clicked", Toast.LENGTH_SHORT).show()
+        tvEquation.append("=")
+        num2 = tvResult.text.toString().filter { it.isDigit() }.toInt() //see num1 if confused
+        var temp = -23
+        if(varOperator=="+"){
+            temp = num1+num2
+        }
+        else if(varOperator=="-"){
+            temp = num1 - num2
+        }
+        else if(varOperator=="x"){
+            temp = num1 * num2
+        }
+        else if(varOperator=="/"){
+            temp = num1/num2
+        }
+
+        tvResult.text = temp.toString()
+        tvEquation.append("${temp.toString()}\n")
     }
 }

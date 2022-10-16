@@ -16,6 +16,7 @@
         android:background="#FDE0CC"
         android:gravity="end|bottom"
 
+        android:scrollbars="vertical"
         android:hint="Equation here"
         android:textColor="@color/black"
         android:textSize="40sp" />
