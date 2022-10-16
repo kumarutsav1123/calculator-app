@@ -11,20 +11,19 @@
     <TextView
         android:id="@+id/tvEquation"
         android:layout_width="match_parent"
-        android:layout_height="222dp"
+        android:layout_height="223dp"
         android:layout_margin="5sp"
         android:background="#FDE0CC"
         android:gravity="end|bottom"
 
         android:hint="Equation here"
-        android:maxLength="12"
         android:textColor="@color/black"
         android:textSize="40sp" />
 
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
-        android:layout_height="122dp"
+        android:layout_height="123dp"
         android:layout_margin="5sp"
         android:background="#FDE0CC"
         android:gravity="end|bottom"
@@ -46,7 +45,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
 
             android:onClick="onDigit"
             android:textSize="23sp"
@@ -56,7 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -66,7 +65,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -76,7 +75,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onOperator"
 
             android:textSize="23sp"
@@ -93,7 +92,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -103,7 +102,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -113,7 +112,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
 
             android:textSize="23sp"
             android:text="6"
@@ -122,7 +121,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onOperator"
 
             android:textSize="23sp"
@@ -140,7 +139,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -150,7 +149,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -160,7 +159,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -170,7 +169,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onOperator"
 
             android:textSize="23sp"
@@ -189,7 +188,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onDigit"
 
             android:textSize="23sp"
@@ -200,7 +199,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
 
             android:onClick="onDecimal"
             android:textSize="23sp"
@@ -210,7 +209,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:onClick="onOperator"
 
             android:textSize="23sp"
@@ -228,7 +227,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:textSize="23sp"
             android:onClick="onEqual"
 
@@ -238,7 +237,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:textSize="20sp"
             android:onClick="onClearAll"
 
@@ -248,7 +247,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="2dp"
+            android:layout_margin="3dp"
             android:textSize="23sp"
             android:onClick="onClear"
 

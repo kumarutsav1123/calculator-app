@@ -25,16 +25,22 @@ class MainActivity : AppCompatActivity() {
     var num1 = 0;
     var num2 = 0;
     fun onOperator(view:View){
-//        Toast.makeText(this,"Operator clicked", Toast.LENGTH_SHORT).show()
-        num1=(view as Button).text as Int
+//        Toast.makeText(this,"yes $num1", Toast.LENGTH_SHORT).show()
+        //tvResult.text gives text and not String
+        //string.filer{ it.isDigit()} filters out all the Digits in string
+
+        val temp = tvResult.text.toString().filter { it.isDigit() }
+        num1 = temp.toInt()
         tvEquation.append((view as Button).text)
         tvResult.text = ""
-
-
     }
     fun onEqual(view:View){
         Toast.makeText(this,"Equal clicked", Toast.LENGTH_SHORT).show()
         tvEquation.append("=")
+        num2 = tvResult.text.toString().filter { it.isDigit() }.toInt() //see num1 if confused
+        val temp = num1+num2
+        tvResult.text = temp.toString()
+        tvEquation.append("${temp.toString()}\n")
     }
     fun onClear(view: View){
         tvResult.text = ""
@@ -48,6 +54,7 @@ class MainActivity : AppCompatActivity() {
     fun onDecimal(view: View){
         if(lastNumeric == true && lastDecimal == false){
             tvResult.append(".")
+            tvEquation.append(".")
             lastDecimal=true
         }
         else if(lastNumeric==false){
