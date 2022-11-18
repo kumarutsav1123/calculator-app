@@ -13,7 +13,7 @@
     <TextView
         android:id="@+id/tvEquation"
         android:layout_width="match_parent"
-        android:layout_height="223dp"
+        android:layout_height="208dp"
         android:layout_margin="5sp"
         android:gravity="end|bottom"
 
@@ -36,7 +36,7 @@
         />
     <View
         android:layout_width="match_parent"
-        android:layout_height="5dp"
+        android:layout_height="3dp"
         android:background="@drawable/rounded_line"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -46,11 +46,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
         >
 
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -60,7 +61,7 @@
             android:text="7"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -70,7 +71,7 @@
             android:text="8"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -80,7 +81,7 @@
             android:text="9"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -97,7 +98,7 @@
         >
 
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -107,7 +108,7 @@
             android:text="4"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -117,16 +118,17 @@
             android:text="5"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
+            android:onClick="onDigit"
 
             android:textSize="23sp"
             android:text="6"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -144,7 +146,7 @@
         >
 
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -154,7 +156,7 @@
             android:text="1"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -164,7 +166,7 @@
             android:text="2"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -174,7 +176,7 @@
             android:text="3"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -193,7 +195,7 @@
 
         <Button
             android:id="@+id/butt0"
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:layout_margin="3dp"
@@ -204,7 +206,7 @@
             />
 
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -214,7 +216,7 @@
             android:text="."
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
@@ -232,7 +234,7 @@
         >
 
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:layout_margin="3dp"
@@ -242,17 +244,17 @@
             android:text="="
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
-            android:textSize="20sp"
+            android:textSize="19sp"
             android:onClick="onClearAll"
 
             android:text="CLR ALL"
             />
         <Button
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_margin="3dp"
