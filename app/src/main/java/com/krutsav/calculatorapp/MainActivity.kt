@@ -73,7 +73,14 @@ class MainActivity : AppCompatActivity() {
             temp = num1 * num2
         }
         else if(varOperator=="/"){
-            temp = num1/num2
+            try{
+                temp = num1/num2
+            }
+            catch (e:Exception){
+                Toast.makeText(this, "Divided by 0?", Toast.LENGTH_LONG).show()
+//                Toast.makeText(this, "Dude you got No beaches?", Toast.LENGTH_SHORT).show()
+                temp = num1;
+            }
         }
 
         tvResult.text = temp.toString()
